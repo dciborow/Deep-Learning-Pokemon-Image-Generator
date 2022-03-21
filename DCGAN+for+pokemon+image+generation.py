@@ -48,8 +48,10 @@ dataset = dset.ImageFolder(root="root",
 
 # In[10]:
 
-dataloader = torch.utils.data.DataLoader(dataset, batch_size=16,
-                                         shuffle=True, num_workers=int(2))
+dataloader = torch.utils.data.DataLoader(
+    dataset, batch_size=16, shuffle=True, num_workers=2
+)
+
 
 
 # # Gan Model
